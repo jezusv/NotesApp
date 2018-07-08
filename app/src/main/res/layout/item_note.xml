@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Title Note"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="18dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txt_Fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/08/2018"
+        android:layout_alignParentEnd="true"
+        />
+
+        <TextView
+            android:id="@+id/txt_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/txt_Fecha"
+            android:text="pruesdfasaba" />
+        <CheckBox
+            android:id="@+id/chk_favority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:starStyle"
+            android:layout_below="@id/txt_detail"
+            android:layout_toStartOf="@+id/ibtn_archivar"
+            android:text="Favorito  "
+            />
+
+        <ImageButton
+            android:id="@+id/ibtn_archivar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txt_detail"
+            android:layout_toStartOf="@+id/lbl_archivar"
+            android:src="@android:drawable/ic_menu_upload" />
+
+        <TextView
+            android:id="@+id/lbl_archivar"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txt_detail"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="Archivar" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
